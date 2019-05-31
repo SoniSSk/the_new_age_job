@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<style>#div3
+{
+background : url("new1.jpg");
+
+height :1500px;
+color :white;
+
+}
+</style>
+<html><head>
+
+<title>The New Age Jobs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<div id="div3">
+<body bgcolor="CCCCFF" alink="660000" link="000066" vlink="CC0066">
+
+<center>
+<font size="7" face="LUCIDA HANDWRITING" color="white">
+<b>
+THE NEW AGE JOBS
+</b>
+</font>
+</center>
+<hr/>
+
+<marquee bgcolor="99FF00" hspace="10%" vspace="0.5%">
+<font color="000066" size="5" face="TIMES NEW ROMAN">
+<b>
+<i>
+Welcome to the New Age Jobs. The only destination that you will ever need to get your dream job in the market place.
+</i>
+</b>
+</font>
+</marquee>
+<hr/>
+<div class="w3-content w3-display-container">
+<img class="mySlides" src="job1a.jpg" style="width:100%">
+<img class="mySlides" src="job2a.jpg" style="width:100%">
+<img class="mySlides" src="job3a.jpg" style="width:100%">
+
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length}
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+</script>
+<hr/>
+<font face="Times New Roman" size="6" color="00FF00">
+<table border="1" cellpadding="5" cellspacing="5" bgcolor="330033" bordercolor="00FFFF" width="100%">
+<tr>
+<td>
+<center>
+<a href="signup.html" target="_blank">SIGN UP</a>
+</center>
+</td>
+</tr>
+</table>
+</font>
+<hr>
+<font face="Bookman Old Style" size="6" color="003300">
+<table border="1" cellpadding="5" cellspacing="5" bgcolor="00FF00" bordercolor="006600" width="100%">
+<tr>
+<td>
+<center>
+<a href="search.html" target="_blank">Search your favourite job or employer here.</a>
+</center>
+</td>
+</tr>
+</table>
+</font>
+<hr>
+<font face="Georgia" size="6" color="660033">
+<table border="1" cellpadding="5" cellspacing="5" bgcolor="CC66CC" bordercolor="663366" width="100%">
+<tr>
+<td>
+<center>
+<a href="aboutus.html" target="_blank">ABOUT US</a>
+</center>
+</td>
+</tr></table></font></body></div>
+</html>

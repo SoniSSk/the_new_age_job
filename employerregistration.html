@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 
+{background-color:black;
+}
+
+form table #div1
+{
+ background-color: #BBB5D7;
+	float :left;
+    width:50%;
+}
+
+#div3
+{
+background : url("new1.jpg");
+
+height :1200px;
+color :white;
+
+}
+
+table input
+{
+	
+    padding : 2px;
+    margin :4px;
+    width: 600x
+	
+}
+table td
+{
+	padding : 5px;
+    margin :3px;
+	font-size:10px bold;
+	
+}
+
+</style>
+</head>
+<body><div id="div3">
+
+<h2 align="center" color :black> Employer Registratioin Page</h2>
+
+<h5><font type="Times New Roman" color="white" size="3">
+	<b>
+		Instructions
+	</b>
+	Enter the details of your company in the form provided below.
+	<ul><li>
+		Enter the complete name of your company in the first field. </li>
+		<br><li>
+		Enter the Official Email ID of the company in the second field.</li>
+		<br>
+		<li> In the third field, enter the complete 10 digit phone number of the company.</li>
+		<br>
+		<li>
+		Then enter the city in which your company's office is situated through the available radio buttons.
+		</li>
+		<br>
+		<li> 
+		Enter the complete address of your company's office in the text area below the radio buttons. The Building                              number, Street name and the other details should be properly mentioned in this field.
+		</li>
+		<br>
+		<li>
+		Following that, you should provide the minimum required educational status through the radio buttons in                              the next field.
+		</li>
+		<br>
+		<li>
+		Then, enter the field of expertise for which your company wants to hire the applicants for.
+		</li>
+		<br>
+		<li>
+		After that, in the last field, enter the details of the job for which your company wants to hire 
+applicants in the text area provided at the last.
+		</li>
+	<br>
+	</ul>
+	<hr></font>
+</h5>
+<form name="form1" method="POST" action="submitemployerform.php">
+<table>
+<div id="div1">
+<tr><td>Company Name :</td><td><input type="text"  name= "name1" autofocus /  ></td></tr>
+<tr><td>Official E-mail  :</td><td><input type="text" name="email" autofocus /> </td></tr>
+<tr><td>Official Phone Number :</td><td><input type="number" name="contact" minlength ="10" maxlength = "10" autofocus/> </td></tr>
+
+<tr><td>Gender:</td><td>
+	<input type="radio" name="gender" value="female">Female
+	<input type="radio" name="gender" value="male">Male
+	<input type="radio" name="gender" value="other">Other</td></tr>
+
+<tr><td>Office Location City:</td><td>
+	<input type="radio" name="city" value="Delhi">Delhi
+	<input type="radio" name="city" value="Mumbai">Mumbai
+	<input type="radio" name="city" value="Kolkata">Kolkata
+	<input type="radio" name="city" value="Noida">Noida
+	<input type="radio" name="city" value="Gurgaon">Gurgaon
+	<input type="radio" name="city" value="Chennai">Chennai
+	<input type="radio" name="city" value="Bangalore">Bangalore</td><td>
+	</td></tr>
+<tr><td>Complete Office Address: </td><td><textarea name="address" rows="3" cols="40"></textarea></td></tr>
+
+
+<tr><td>Required Educational Status of the Applicant:</td><td>
+	<input type="radio" name="edustatus" value="10">10<sup>th</sup>
+	<input type="radio" name="edustatus" value="12">12<sup>th</sup>
+	<input type="radio" name="edustatus" value="Bachelor">Bachelor
+	<input type="radio" name="edustatus" value="Masters">Masters
+	<input type="radio" name="edustatus" value="PHD">P.Hd.</td></tr>
+
+
+<tr><td>Field of the job being offered by the company:</td><td>
+	<input type="radio" name="field" value="CSE">Computer Science and Engineering
+	<input type="radio" name="field" value="ECE">Electronics and Communications Engineering
+	<input type="radio" name="field" value="EE">Electrical Engineering
+	<input type="radio" name="field" value="ME">Mechanical Egineering
+	<input type="radio" name="field" value="HR">Human Resource
+	<input type="radio" name="field" value="MGR">Management
+	<input type="radio" name="field" value="DESIGN">Design</td></tr>
+
+
+<tr><td>Details of the Job Being offered:</td><td> <br><textarea name="address" rows="5" cols="40"></textarea> </td></tr>
+
+<tr><td><input type="Reset" value ="Reset"/></td><td><input type="submit" value ="Submit"/> </td></tr>
+</div>
+<div>
+</table>
+</form>
+
+</body>
+</html>

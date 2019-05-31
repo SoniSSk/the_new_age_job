@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 
+{background-color:black;
+}
+
+form table #div1
+{
+ background-color: #BBB5D7;
+	float :left;
+    width:50%;
+}
+
+#div3
+{
+background : url("new1.jpg");
+
+height :1200px;
+color :white;
+
+}
+
+table input
+{
+	
+    padding : 2px;
+    margin :4px;
+    width: 600x
+	
+}
+table td
+{
+	padding : 5px;
+    margin :3px;
+	font-size:10px bold;
+	
+}
+
+</style>
+</head>
+<body><div id="div3">
+
+<h2 align="center" color :black> Employee Registration Details</h2>
+
+<h5><font type="Times New Roman" color="white" size="3">
+	<b> Instructions </b>
+	Enter the details in the form provided below.
+	<ul type="circle">
+		<li>Enter your complete name in the first filed. </li><br>
+		<li>Enter the Email ID in the second field. </li><br>
+		<li>Enter the complete 10 digit phone number in third field. </li><br>
+		<li>Select Gender from the radio buttons.</li><br>
+		<li>Then enter the city in which you are residing through the available radio buttons.</li><br>
+		<li>Enter your complete address in the text area below the radio buttons.</li><br>
+		<li> You should mention your House Number, Street name and the other details in this field.</li><br>
+		<li>Following that, you should provide the educational status through the radio buttons in the next field. </li>
+           <br>              <li>Then, enter the educational details through the text area below that. </li>
+		<br><li>After that select the field of study and expertise through the radio buttons in the next field.</li><br>
+	</ul><hr></font>
+</h5>
+
+<form name="form1" method="POST" action="submitemployeeform.php">
+
+<table>
+<div id="div1">
+<tr><td>Complete Name: </td><td><input type="text" name="name"></td></tr>
+<tr><td>E-mail  :</td><td><input type="text" name="email" autofocus /> </td></tr>
+<tr><td>Phone Number :</td><td><input type="number" name="contact" minlength ="10" maxlength = "10" autofocus/> </td></tr>
+
+<tr><td>Gender:</td><td>
+	<input type="radio" name="gender" value="female">Female
+	<input type="radio" name="gender" value="male">Male
+	<input type="radio" name="gender" value="other">Other</td></tr>
+
+<tr><td>Residing City:</td><td>
+	<input type="radio" name="city" value="Delhi">Delhi
+	<input type="radio" name="city" value="Mumbai">Mumbai
+	<input type="radio" name="city" value="Kolkata">Kolkata
+	<input type="radio" name="city" value="Noida">Noida
+	<input type="radio" name="city" value="Gurgaon">Gurgaon
+	<input type="radio" name="city" value="Chennai">Chennai
+	<input type="radio" name="city" value="Bangalore">Bangalore</td><td>
+	</td></tr>
+<tr><td> Office Address: </td><td><textarea name="address" rows="3" cols="40"></textarea></td></tr>
+
+
+<tr><td>Educational Status:</td><td>
+	<input type="radio" name="edustatus" value="10">10<sup>th</sup>
+	<input type="radio" name="edustatus" value="12">12<sup>th</sup>
+	<input type="radio" name="edustatus" value="Bachelor">Bachelor
+	<input type="radio" name="edustatus" value="Masters">Masters
+	<input type="radio" name="edustatus" value="PHD">P.Hd.</td></tr>
+
+
+<tr><td>Field:</td><td>
+	<input type="radio" name="field" value="CSE">Computer Science and Engineering
+	<input type="radio" name="field" value="ECE">Electronics and Communications Engineering
+	<input type="radio" name="field" value="EE">Electrical Engineering
+	<input type="radio" name="field" value="ME">Mechanical Egineering
+	<input type="radio" name="field" value="HR">Human Resource
+	<input type="radio" name="field" value="MGR">Management
+	<input type="radio" name="field" value="DESIGN">Design</td></tr>
+
+
+<tr><td>Details of the Educational status:</td><td> <br><textarea name="address" rows="5" cols="40"></textarea> </td></tr>
+
+<tr><td><input type="Reset" value ="Reset"/></td><td><input type="submit" value ="Submit"/> </td></tr>
+</div>
+<div>
+</table>
+</form>
+
+</body>
+</html>
